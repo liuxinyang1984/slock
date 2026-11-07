@@ -1,0 +1,4 @@
+config.h
+*.o
+slock
+*.tar.gz
