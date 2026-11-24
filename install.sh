@@ -39,7 +39,7 @@ usage() {
   覆盖: IDLE_LOCK_SEC / IDLE_DPMS_SEC
   会话脚本: 父仓 ./config/x11/dwm/install.sh 或 desktop:suckless
 
-手动锁屏: dwm Super+Ctrl+l → slock
+手动锁屏: dwm Ctrl+Alt+l → slock
 测: slock   # 输入密码解锁；Ctrl+Alt+F2 救急
 
 示例:
