@@ -10,7 +10,7 @@
 
 - Arch：`group = "nobody"`
 - 每次 `draw()` 清屏后重画 message（否则方块刷新会冲掉文字）
-- message 改 **Xft**：拉丁 Maple、汉字行 Noto Sans CJK SC
+- message 改 **Xft**：拉丁 `monospace`、汉字行写死 `Noto Sans CJK SC`（setuid 读不到用户 fontconfig，不能靠 sans→CJK 链）
 - 默认文案：星际争霸「是谁在呼叫舰队？ / Who calls the fleet?」
 - `NULL` message 仍可回退为锁定时间（`locktimefmt`）
 

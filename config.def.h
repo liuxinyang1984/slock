@@ -30,6 +30,10 @@ static const char *locktimefmt = "%Y-%m-%d %H:%M";
 /* text color */
 static const char *text_color = "#eeeeee";
 
-/* Xft：走 fontconfig；CJK 回退由 monospace/sans 链提供 */
+/*
+ * Xft：slock 为 setuid，跑在 root/nobody 下，读不到 ~/.config/fontconfig。
+ * 用户级的 sans→Noto CJK 链不生效，sans-serif 会落到无汉字的 Noto Sans。
+ * CJK 必须写死系统路径里的族名（Noto Sans CJK SC 在 /usr/share/fonts）。
+ */
 static const char *font_name = "monospace:size=32";
-static const char *font_name_cjk = "sans-serif:size=32";
+static const char *font_name_cjk = "Noto Sans CJK SC:size=32";
