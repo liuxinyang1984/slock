@@ -30,6 +30,6 @@ static const char *locktimefmt = "%Y-%m-%d %H:%M";
 /* text color */
 static const char *text_color = "#eeeeee";
 
-/* Xft：拉丁用 Maple；含汉字的行用 CJK（Maple 无汉字字形） */
-static const char *font_name = "Maple Mono NL NF:size=32";
-static const char *font_name_cjk = "Noto Sans CJK SC:size=32";
+/* Xft：走 fontconfig；CJK 回退由 monospace/sans 链提供 */
+static const char *font_name = "monospace:size=32";
+static const char *font_name_cjk = "sans-serif:size=32";
